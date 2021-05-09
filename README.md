@@ -22,3 +22,8 @@
 - URL deve ser passada completa ex: www.google.com.br
 - Validade de 30 minutos
 - Caso gerada novamente o tempo é atualizado
+
+### Teste
+
+- ./vendor/bin/phpunit tests/Http/Controllers/Api/ShortenControllerTest.php 
+
