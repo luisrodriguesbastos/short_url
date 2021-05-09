@@ -19,6 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/shorten/{url}',[ShortenController::class, 'shorten']);
+Route::post('/shorten/{url}',[ShortenController::class, 'shorten']);
 
 Route::get('/{hash}',[ShortenController::class, 'getUrl']);
