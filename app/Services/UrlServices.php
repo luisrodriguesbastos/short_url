@@ -41,7 +41,7 @@ class UrlServices
         } else {
             $this->urlModel->updateStatus($register, StatusUrl::ACTIVE);
         }
-        return env('APP_URL') . $hash;
+        return env('APP_URL') . config('url.path_api') . $hash;
     }
 
     /**
